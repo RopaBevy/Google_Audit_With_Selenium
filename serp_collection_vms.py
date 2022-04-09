@@ -9,7 +9,7 @@ import time, os
 # Set the driver path
 driverpath ='./driver/chromedriver'
 
-# chrome_options = webdriver.ChromeOptions()
+chrome_options = webdriver.ChromeOptions()
 
 # # Create the driver instance
 # driver = webdriver.Chrome(executable_path=driverpath, 
