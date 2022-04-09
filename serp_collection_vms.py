@@ -9,11 +9,11 @@ import time, os
 # Set the driver path
 driverpath ='./driver/chromedriver'
 
-chrome_options = webdriver.ChromeOptions()
+# chrome_options = webdriver.ChromeOptions()
 
-# Create the driver instance
-driver = webdriver.Chrome(executable_path=driverpath, 
-                          options=chrome_options)
+# # Create the driver instance
+# driver = webdriver.Chrome(executable_path=driverpath, 
+#                           options=chrome_options)
 
 def search_query(query, path):
     """
@@ -24,8 +24,7 @@ def search_query(query, path):
     coordinatesDict - a dictionary with the latitude, longitude, and accuracy
     """
     # Create a new instance of the driver for every search
-    driver = webdriver.Chrome(executable_path=driverpath, 
-                              options=chrome_options)
+    driver = webdriver.Chrome(executable_path=driverpath)
     
     # perform the search, because we need the location link to show
     url = f"https://google.com/search?q={query}"
