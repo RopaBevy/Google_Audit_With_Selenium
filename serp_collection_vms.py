@@ -7,7 +7,7 @@ import csv
 import time, os
 
 # Set the driver path
-driverpath ='./driver/chromedriver'
+driverpath ='driver/chromedriver'
 
 # chrome_options = webdriver.ChromeOptions()
 
